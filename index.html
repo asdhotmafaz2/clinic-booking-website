@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinic Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>مرحباً بكم في عيادتنا</h1>
+    <p>احجز موعدك بكل سهولة</p>
+  </header>
+
+  <main>
+    <h2>حجز موعد جديد</h2>
+
+    <form id="bookingForm">
+
+      <label for="patientName">اسم المراجع</label>
+      <input type="text" id="patientName" required>
+
+      <label for="appointmentDate">تاريخ الموعد</label>
+      <input type="date" id="appointmentDate" required>
+
+<label for="doctor">اختاري الطبيب</label>
+
+<select id="doctor" required>
+  <option value="">اختاري الطبيب</option>
+  <option value="د. أحمد">د. أحمد</option>
+  <option value="د. سارة">د. سارة</option>
+  <option value="د. خالد">د. خالد</option>
+</select>
+
+      <button type="submit">احجز الآن</button>
+    </form>
+    
+<section class="appointments">
+  <h2>المواعيد المحفوظة</h2>
+  <ul id="appointmentsList"></ul>
+</section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

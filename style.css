@@ -1,0 +1,148 @@
+
+/* إعدادات الصفحة */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  background-color: #f8f5ff;
+  color: #302544;
+  direction: rtl;
+}
+
+/* عنوان الموقع */
+header {
+  background: #7952b3;
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+header h1 {
+  margin: 0 0 12px;
+}
+
+/* بطاقة الحجز */
+main {
+  background: white;
+  max-width: 480px;
+  margin: 45px auto;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 6px 25px #00000012;
+}
+
+h2 {
+  text-align: center;
+  color: #7952b3;
+}
+
+/* نموذج الحجز */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+/* زر الحجز */
+button {
+  background: #7952b3;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #603c94;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  background: white;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: white;
+}
+
+.appointments {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.appointments li {
+  background: #f8f5ff;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+#appointmentsList {
+  list-style: none;
+  padding: 0;
+}
+
+.appointments li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.delete-btn {
+  background: #ffe1e8;
+  color: #b42342;
+  padding: 8px 14px;
+  margin-top: 0;
+  border: none;
+  border-radius: 7px;
+}
+
+.delete-btn:hover {
+  background: #ffc6d4;
+}
+
+.appointment-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.appointments li {
+  flex-wrap: wrap;
+}
+
+.edit-btn {
+  background: #e9dcff;
+  color: #603c94;
+  padding: 8px 14px;
+  margin-top: 0;
+  border-radius: 7px;
+}
+
+.edit-btn:hover {
+  background: #d9c4fb;
+}
